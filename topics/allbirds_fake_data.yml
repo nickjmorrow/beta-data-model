@@ -1,0 +1,5 @@
+base_view: allbirds_sales_marketing_demo
+label: Allbirds fake data
+model_name: zenlytic_managed
+views: {}
+type: topic

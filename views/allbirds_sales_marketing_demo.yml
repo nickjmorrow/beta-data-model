@@ -1,0 +1,49 @@
+name: allbirds_sales_marketing_demo
+type: view
+model_name: zenlytic_managed
+sql_table_name: allbirds_sales_marketing_demo
+default_date: date
+fields:
+  - name: product
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."PRODUCT"
+    searchable: true
+  - name: region
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."REGION"
+    searchable: true
+  - name: marketing_channel
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."MARKETING_CHANNEL"
+    searchable: true
+  - name: sales_units
+    field_type: dimension
+    type: number
+    sql: ${TABLE}."SALES_UNITS"
+    searchable: true
+  - name: sales_revenue
+    field_type: dimension
+    type: number
+    sql: ${TABLE}."SALES_REVENUE"
+    searchable: true
+  - name: marketing_spend
+    field_type: dimension
+    type: number
+    sql: ${TABLE}."MARKETING_SPEND"
+    searchable: true
+  - name: date
+    field_type: dimension_group
+    type: time
+    sql: ${TABLE}."DATE"
+    timeframes:
+      - date
+      - week
+      - month
+      - quarter
+      - year
+      - day_of_year
+      - week_of_year
+      - month_of_year
