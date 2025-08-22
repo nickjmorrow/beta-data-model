@@ -1,5 +1,8 @@
 base_view: allbirds_sales_marketing_demo
-label: Allbirds fake data
 model_name: zenlytic_managed
+label: Allbirds fake data
 views: {}
 type: topic
+description: >-
+  this is data related to Allbirds shoe company. It includes sales and marketing
+  data. 
