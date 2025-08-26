@@ -1,7 +1,7 @@
 type: view
 name: products_dnd
 model_name: zenlytic_managed
-sql_table_name: products_dnd
+sql_table_name: products
 default_date: release_date
 fields:
   - name: product_id
