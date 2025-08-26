@@ -1,5 +1,0 @@
-base_view: bom_tariffs_csv_preview
-label: CSV Upload
-model_name: zenlytic_managed
-views: {}
-type: topic
