@@ -11,3 +11,8 @@ views:
       join_type: left_outer
       relationship: one_to_many
       sql_on: ${customers.customer_id} = ${order_lines.customer_id}
+  bom_tariffs_csv_preview:
+    join:
+      join_type: left_outer
+      relationship: one_to_many
+      sql_on: ${customers.customer_id}=${bom_tariffs_csv_preview.AnimalId}
