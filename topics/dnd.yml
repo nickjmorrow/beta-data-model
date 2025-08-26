@@ -1,5 +1,0 @@
-base_view: products_dnd
-label: DND
-model_name: zenlytic_managed
-views: {}
-type: topic

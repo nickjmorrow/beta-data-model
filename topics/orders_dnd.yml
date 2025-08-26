@@ -1,5 +1,0 @@
-base_view: orders_dnd
-label: Orders_DND
-model_name: zenlytic_managed
-views: {}
-type: topic
