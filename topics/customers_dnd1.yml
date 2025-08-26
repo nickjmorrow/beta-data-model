@@ -1,0 +1,5 @@
+base_view: customers_dnd1
+label: Customers_DND1
+model_name: zenlytic_managed
+views: {}
+type: topic
