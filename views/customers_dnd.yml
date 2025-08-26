@@ -1,58 +1,63 @@
+name: customers_dnd
 type: view
-name: products_dnd
 model_name: zenlytic_managed
-sql_table_name: products
-default_date: release_date
+sql_table_name: customers
+default_date: registration_date
 fields:
-  - name: product_id
+  - name: customer_id
     field_type: dimension
     type: string
-    sql: ${TABLE}."PRODUCT_ID"
+    sql: ${TABLE}."CUSTOMER_ID"
     searchable: true
-  - name: name
+  - name: first_name
     field_type: dimension
     type: string
-    sql: ${TABLE}."NAME"
+    sql: ${TABLE}."FIRST_NAME"
     searchable: true
-  - name: category
+  - name: last_name
     field_type: dimension
     type: string
-    sql: ${TABLE}."CATEGORY"
+    sql: ${TABLE}."LAST_NAME"
     searchable: true
-  - name: manufacturer
+  - name: email
     field_type: dimension
     type: string
-    sql: ${TABLE}."MANUFACTURER"
+    sql: ${TABLE}."EMAIL"
     searchable: true
-  - name: price
+  - name: phone
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."PHONE"
+    searchable: true
+  - name: address
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."ADDRESS"
+    searchable: true
+  - name: city
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."CITY"
+    searchable: true
+  - name: state
+    field_type: dimension
+    type: string
+    sql: ${TABLE}."STATE"
+    searchable: true
+  - name: zip_code
     field_type: dimension
     type: number
-    sql: ${TABLE}."PRICE"
+    sql: ${TABLE}."ZIP_CODE"
     searchable: true
-  - name: stock_quantity
-    field_type: dimension
-    type: number
-    sql: ${TABLE}."STOCK_QUANTITY"
-    searchable: true
-  - name: scale
+  - name: customer_type
     field_type: dimension
     type: string
-    sql: ${TABLE}."SCALE"
+    sql: ${TABLE}."CUSTOMER_TYPE"
     searchable: true
-  - name: material
-    field_type: dimension
-    type: string
-    sql: ${TABLE}."MATERIAL"
-    searchable: true
-  - name: description
-    field_type: dimension
-    type: string
-    sql: ${TABLE}."DESCRIPTION"
-    searchable: true
-  - name: release_date
+  - name: registration_date
     field_type: dimension_group
     type: time
-    sql: ${TABLE}."RELEASE_DATE"
+    sql: ${TABLE}."REGISTRATION_DATE"
     timeframes:
       - date
       - week
