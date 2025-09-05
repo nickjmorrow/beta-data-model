@@ -2,7 +2,7 @@ type: view
 name: candy_shop_products
 model_name: zenlytic_managed
 sql_table_name: candy_shop_products
-default_date: date_joined
+default_date: last_restocked
 fields:
   - name: product_id
     field_type: dimension
