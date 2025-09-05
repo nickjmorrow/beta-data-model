@@ -1,6 +1,0 @@
-base_view: doctors_csv
-model_name: zenlytic_managed
-label: Doctors Csv
-description: ''
-views: {}
-type: topic
