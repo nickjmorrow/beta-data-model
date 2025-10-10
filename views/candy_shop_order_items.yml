@@ -6,9 +6,10 @@ fields:
   - name: order_item_id
     field_type: dimension
     type: string
-    sql: ${TABLE}."ORDER_ITEM_ID"
-    searchable: true
+    description: jkljkljklj
     primary_key: true
+    searchable: true
+    sql: ${TABLE}."ORDER_ITEM_ID"
 
   - name: order_id
     field_type: dimension
