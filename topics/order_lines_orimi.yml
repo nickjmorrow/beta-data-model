@@ -1,0 +1,7 @@
+base_view: order_lines_orimi
+name: order_lines_orimi
+model_name: pure_organics
+label: Order Lines Orimi
+description: ''
+views: {}
+type: topic
