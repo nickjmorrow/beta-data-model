@@ -34,9 +34,10 @@ fields:
   - name: session_id
     field_type: dimension
     type: string
+    description: yuiyiuyiuy
     hidden: true
-    sql: ${TABLE}.SESSION_ID
     searchable: false
+    sql: ${TABLE}.SESSION_ID
 
   - name: device_is_mobile
     field_type: dimension
