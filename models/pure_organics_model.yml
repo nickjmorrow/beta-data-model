@@ -50,3 +50,8 @@ relationships:
     join_type: left_outer
     relationship: many_to_one
     sql_on: ${events.customer_id}=${customers.customer_id}
+  - from_table: products
+    join_table: order_lines
+    join_type: left_outer
+    relationship: one_to_many
+    sql_on: ${products.product_id}=${order_lines.product_id}
