@@ -361,37 +361,3 @@ fields:
     description: Total gross revenue = revenue from product sales + shipping revenues
     value_format_name: decimal_1
     sql: ${products.count_products} / ${number_of_orders}
-
-  - name: aoxuiqyjwgvgkujunqrpcvouuysufoyhcpgluvhn
-    field_type: measure
-    type: count_distinct
-    label: Duplicate Number Of Orders
-    description: The unique number of orders placed
-    value_format_name: decimal_0
-    sql: ${order_id}
-    canon_date: order_lines.order
-    update_where_timeframe: true
-
-  - name: hydrxymbmresofgymxjlototvmpvcrphtjnqadtk
-    field_type: measure
-    type: number
-    label: Duplicate Gross Aov
-    description: Gross AOV = gross revenues / number of orders
-    value_format_name: usd
-    sql: ${total_gross_revenue} / nullif(${number_of_orders}, 0)
-    synonyms:
-      - Average order value
-    canon_date: order_lines.order
-    update_where_timeframe: true
-
-  - name: kjwnlskfjpnblhmlfngyzgbtwbiczbqviaexaaqz
-    field_type: measure
-    type: number
-    label: Duplicate Repurchase Rate
-    description: Repurchase rate = number of repeat orders / number of orders.
-    value_format_name: percent_1
-    sql: ${number_of_repeat_orders} / ${number_of_orders}
-    synonyms:
-      - Repeat order rate
-    canon_date: order_lines.order
-    update_where_timeframe: true
