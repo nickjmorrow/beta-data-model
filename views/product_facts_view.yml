@@ -61,14 +61,6 @@ fields:
     field_type: measure
     type: sum
     sql: ${TABLE}.total_cogs
-
-  - name: hopeabryuseenwzxeedrutdmyiowzrlvydxqslmj
-    field_type: measure
-    type: sum
-    label: Duplicate Number Of Units
-    sql: ${TABLE}.number_of_units
-    canon_date: product_facts.order
-    update_where_timeframe: true
 derived_table:
   sql: >
     select order_lines.order_at
