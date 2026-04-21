@@ -2,7 +2,7 @@ version: 1
 type: dashboard
 name: revenue_dashboard
 label: Revenue Dashboard
-description: Key Pure Organics company sales metrics
+description: Key Pure 
 filters:
   - field: order_lines.subscription_vs_otp
     value: Subscription, One Time Purchase
